@@ -4,11 +4,13 @@ from traceback import format_exc
 from pyrogram import filters
 from pyrogram.types import Message
 
-from SaitamaRobot import arq
 from SaitamaRobot.utils.errors import capture_err
 from SaitamaRobot import pgram as app, BOT_USERNAME
 
 
+ARQ_API_KEY = "PIHVJY-TCWRTN-FRGUHB-QOUFXH-ARQ"
+aiohttpsession = aiohttp.ClientSession()
+arq = ARQ("https://thearq.tech", ARQ_API_KEY, aiohttpsession)
 
 async def quotify(messages: list):
     response = await arq.quotly(messages)
