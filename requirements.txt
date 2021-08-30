@@ -33,7 +33,6 @@ telethon
 ujson
 wikipedia
 zalgo-text
-  
 alphabet_detector
 beautifulsoup4
 bleach
@@ -44,7 +43,6 @@ feedparser
 future
 geopy
 googletrans==4.0.0-rc1
-google-trans-new==1.1.9
 humanize
 jikanpy
 lxml
