@@ -4,25 +4,25 @@ from telegram.ext import MessageFilter
 
 
 class CustomFilters:
-    class _Supporters(MessageFilter):
+    class __Supporters(MessageFilter):
         def filter(self, message: Message):
             return bool(message.from_user and message.from_user.id in DEMONS)
 
-    support_filter = _Supporters()
+    support_filter = __Supporters()
 
-    class _Sudoers(MessageFilter):
+    class __Sudoers(MessageFilter):
         def filter(self, message: Message):
             return bool(message.from_user and message.from_user.id in DRAGONS)
 
-    sudo_filter = _Sudoers()
+    sudo_filter = __Sudoers()
 
-    class _Developers(MessageFilter):
+    class __Developers(MessageFilter):
         def filter(self, message: Message):
             return bool(message.from_user and message.from_user.id in DEV_USERS)
 
-    dev_filter = _Developers()
+    dev_filter = __Developers()
 
-    class _MimeType(MessageFilter):
+    class __MimeType(MessageFilter):
         def __init__(self, mimetype):
             self.mime_type = mimetype
             self.name = "CustomFilters.mime_type({})".format(self.mime_type)
@@ -32,9 +32,9 @@ class CustomFilters:
                 message.document and message.document.mime_type == self.mime_type,
             )
 
-    mime_type = _MimeType
+    mime_type = __MimeType
 
-    class _HasText(MessageFilter):
+    class __HasText(MessageFilter):
         def filter(self, message: Message):
             return bool(
                 message.text
@@ -44,4 +44,4 @@ class CustomFilters:
                 or message.video,
             )
 
-    has_text = _HasText()
+    has_text = __HasText()
