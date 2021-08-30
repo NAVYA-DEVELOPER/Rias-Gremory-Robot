@@ -18,6 +18,8 @@ from pyrogram.types import Message
 from youtube_search import YoutubeSearch
 from youtubesearchpython import SearchVideos
 
+from Python_ARQ import ARQ
+
 DURATION_LIMIT = 20
 ARQ_API_KEY = "PIHVJY-TCWRTN-FRGUHB-QOUFXH-ARQ"
 aiohttpsession = aiohttp.ClientSession()
