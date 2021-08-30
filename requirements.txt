@@ -17,6 +17,7 @@ wikipedia
 cachetools
 CurrencyConverter
 googletrans==4.0.0-rc1
+google_trans_new
 humanize
 jikanpy
 lxml
