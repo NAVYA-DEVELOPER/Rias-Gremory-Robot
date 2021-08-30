@@ -19,7 +19,7 @@ class Config(object):
     TOKEN = "1964873608:AAFR2nWYJORCfoSjJfGB5x_vEQE__PjFdEM"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
     OWNER_ID = 1906005317  # If you dont know, run the bot and do /id in your private chat with it, also an integer
     OWNER_USERNAME = "Tech_Shreyash"
-    SUPPORT_CHAT = "Rias_Gremory_Support"  # Your own group for support, do not add the @
+    SUPPORT_CHAT = "RiasSupport"  # Your own group for support, do not add the @
     JOIN_LOGGER = (
         -1001549599890
     )  # Prints any new group the bot is added to, prints just the name and ID.
@@ -30,7 +30,7 @@ class Config(object):
     # RECOMMENDED
     SQLALCHEMY_DATABASE_URI = "postgres://wgshrlxp:eICiaYFax9-9loYKdR9-Cgjuw364a4P7@chunee.db.elephantsql.com/wgshrlxp"  # needed for any database modules # its "URI" and not "URL" as herok and similar ones only accept it as such
     LOAD = []
-    NO_LOAD = ["rss", "cleaner", "connection", "math"]
+    NO_LOAD = ["rss", "wallapaper", "currency_converter", "paste", "math"]
     WEBHOOK = False
     INFOPIC = True
     URL = None
